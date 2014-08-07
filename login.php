@@ -10,7 +10,7 @@
 	
 		<?php //finish remember me process.
 			session_start();
-			$conx = mysql_connect("192.168.137.5","root","PenisKiss") or die(mysql_error());
+			$conx = mysql_connect("192.168.137.5","root","") or die(mysql_error());
 			mysql_select_db("account_system", $conx);
 			
 			$usernameErr = $passwordErr = $username = $password = "";
