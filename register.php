@@ -10,7 +10,7 @@
 	
 		<?php //escape user input.  //update to mysqli.  
 			session_start();
-			$conx = mysql_connect("localhost","root","PenisKiss") or die(mysql_error());
+			$conx = mysql_connect("localhost","root","") or die(mysql_error());
 			mysql_select_db("account_system", $conx);
 			
 			$firstErr = $lastErr = $birthdateErr = $usernameErr = $emailErr = $email2Err = $passwordErr = $passErr = "";
