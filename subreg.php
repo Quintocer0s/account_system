@@ -10,7 +10,7 @@ $username = $_SESSION['username'];
 $email = $_SESSION['email'];
 $vkey = md5( $email . $passhash );
 
-$conx = mysql_connect("localhost","root","PenisKiss") or die(mysql_error());
+$conx = mysql_connect("localhost","root","") or die(mysql_error());
 mysql_select_db("account_system", $conx);
 
 $sql = "INSERT INTO users ( `username`, `email`, `salt`, `passhash`, `reg_date`, `reg_ip`, `must_validate` )" .
